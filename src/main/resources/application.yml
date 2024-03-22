@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: order-of-service
+server:
+  port: 8085
