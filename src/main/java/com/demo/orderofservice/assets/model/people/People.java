@@ -1,7 +1,24 @@
 package com.demo.orderofservice.assets.model.people;
+
+import org.hibernate.validator.constraints.br.CPF;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
+@Entity
 public class People {
+    
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "people_id")
     private Integer id;
+
     private String name;
+
+    @CPF
     private String cpf;
     private String telephone;
 

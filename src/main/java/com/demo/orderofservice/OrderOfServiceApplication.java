@@ -9,4 +9,5 @@ public class OrderOfServiceApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(OrderOfServiceApplication.class, args);
 	}
+
 }
